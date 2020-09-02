@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* hero styles */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.hero-body {
+  background: rgb(248,81,80);
+  background: linear-gradient(180deg, rgba(248,81,80,1) 52%, rgba(255,255,255,1) 79%);
+  background-size: cover;
   min-height: 100vh;
+}
+
+#da_txt{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+/* form styles */
+
+.form-container {
+  background-color: lightgrey;
+  padding: 10px 40px;
+}
+
+.dropdown-styles {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  color: white;
+  margin: 10px 0;
+  padding: 10px 40px;
+}
+
+#root > section.section > div > div > form > div > div.Dropdown-root.input.dropdown-styles > div {
+  border: none;
+  width: 100%;
+  color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.button-div {
+  text-align: center;
+  margin: 25px 0 10px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.submit-button {
+  background-color: #f85150;
+  border: 1px solid #f85150;
+  border-radius: 3px;
   color: white;
+  text-transform: uppercase;
+  padding: 10px 40px;
 }
 
-.App-link {
-  color: #61dafb;
+/* footer styles */
+
+.footer{
+  min-height: 100%;
+  padding: 1rem 1rem 1rem;
+  background-color: #642484;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer column:nth-child(2) {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.container-social{
+  display: unset;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: flex-end;
+
+  height: 50px;
+  flex-basis: 100%;
+}
+#img{
+    width: 60px;
+    height: 60px;
+    margin: 40px;
+}
+
+.logo-aligner {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.white-text {
+  color: white;
 }
